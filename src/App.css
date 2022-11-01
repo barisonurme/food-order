@@ -1,0 +1,88 @@
+
+.backdrop-enter {
+  opacity: 0;
+}
+.backdrop-enter-active {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+.backdrop-exit {
+  opacity: 1;
+}
+.backdrop-exit-active {
+  opacity: 0;
+  transition: opacity 600ms;
+}
+
+.modal-enter {
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+.modal-enter-active {
+  opacity: 1;
+  transform: translate(0, 0px);
+  transition: opacity ease-in-out 600ms, transform 600ms ease;
+}
+.modal-exit {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.modal-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: opacity ease-in-out 600ms, transform 600ms ease;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity ease-in-out 1000ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity ease-in-out 1000ms;
+}
+
+.infoModal-enter {
+  opacity: 0;
+}
+.infoModal-enter-active {
+  opacity: 1;
+  transform: translate(0, 5px);
+  transition: opacity ease-in-out 600ms, transform 600ms ease;
+}
+.infoModal-exit {
+  opacity: 1;
+}
+.infoModal-exit-active {
+  opacity: 0;
+  transform: translate(0, 300px);
+  transition: opacity ease-in-out 600ms, transform 600ms ease;
+}
+
+.deleteItem-enter {
+  opacity: 0;
+}
+.deleteItem-enter-active {
+  opacity: 1;
+  transition: opacity ease-in-out 1000ms;
+}
+.deleteItem-exit {
+  opacity: 1;
+}
+.deleteItem-exit-active {
+  opacity: 0;
+  transition: opacity ease-in-out 1000ms;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
